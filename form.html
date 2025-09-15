@@ -22,16 +22,36 @@ Post Form are used when the entered information is to stay hidden (e.g. password
 <br/>
 <br/>
 <form action="links.html" method="GET">
+    <!-- Text Box Input -->
     <label for="name">Name</label><input type="text" name="name" id="name" placeholder="John HTML"/><br/>
     <label for="email">Email</label><input type="email" name="email" id="email" placeholder="yourEmailHere@domain.ext"/><br/>
     <label for="phone">Phone Number</label><input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"/><br/>
     <br/>
+    <!-- Checkbox -->
     <input type="checkbox" name="emailConsent" id="emailConsent" checked><label for="emailConsent">Do you want to be constantly updated in needless emails about how we slowly ruin your device with malware while we also take up 90% of your email storage within the next week?</label><br/>
     <br/>
+    <!-- Radio Input -->
     How would you prefer to be contacted?<br/>
     <input type="radio" id="prefEmail" name="contactType" value="email"><label for = "prefEmail">Email</label><br/>
     <input type="radio" id="prefPhone" name="contactType" value="phone"><label for = "prefPhone">Phone Number</label><br/>
     <br/>
+    <!-- Date Picker -->
+    <input type="date" name="dob" id="dob"/>
+        <label for="dob">Date of Birth</label>
+    <br/>
+    <!-- Drop Down Menu -->
+    <label for="dpt">Select Department</label>
+    <select name="dpt" id="dpt">
+        <option value="tech">Tech Support</option>
+        <option value="billing">Billing</option>
+        <option value="sales">Sales</option>
+        <option value="other">Other</option>
+    </select>
+    <br/>
+    <br/>
+    <!-- Text Area Input -->
+    <label for="question">Describe your issue:</label><br/>
+    <textarea name="question" id="question" cols="30" rows="10">Please describe your problem here, and we'll get back to you as soon as possible.</textarea>
     <input type="submit"/>
 </form>
 
